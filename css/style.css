@@ -1,0 +1,133 @@
+body {
+    background: #d3d3d336;
+    /* text-align: center;
+    padding: 20px 20px;
+    margin: 0; */
+}
+/* Make body background into slightly gray */
+header {
+    background: #e0000091;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 0;
+}
+/* turn header background into red */
+span.title {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+/* turn web title which is CalTics into bigger size and white in font color */
+span.subtitle {
+    color: lightgreen;
+    font-size: 28px;
+}
+/* turn web subtitle which is Calculatof of mathemTics into bigger size and lightgreen in font color */
+.card {
+    background: white;
+    border: 1px solid #e0000091;
+}
+/* turn calculation of area into white in background with red as its border */
+.red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+}
+/* turn square button into red */
+.white {
+    background-color: white;
+    color: lightgreen;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+}
+/* turn rectangle button into white */
+.coral1 {
+    background-color: #e0000091;
+    color: lightgreen;
+    padding: 25px 25px;
+    width: 100%;
+    border: none;
+}
+/* turn Area of Square subsubtitle into red */
+.figure {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* it does not use padding coz if box sizing change
+    then padding will change too */
+}
+/* organize figre for square figure in the center with wider area available for square figure */
+.welcometext {
+    text-align: center; 
+}
+/* turnd web's welcome text position into center */
+.square {
+    border: 1px solid lightgreen;
+    height: 75px;
+    width: 75px
+}
+/* create square 2D figure */
+hr {
+    color: #d3d3d336;
+}
+/* horizontal line to seperate figure and its calculation side */
+div h3 {
+    text-align: center;
+}
+/* title of area calculation */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    /* text-align: center; */
+}
+/* a space for number input */
+.green {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    border-radius: 2px;
+    width: 80px;
+    height: 45px;
+}
+/* turn calculate button into green and organize its position on web */
+.orange {
+    display: grid;
+    margin-left: auto;
+    background-color: orange;
+    color: white;
+    border-radius: 2px;
+    width: 55px;
+    height: 25px;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+}
+/* turn reset button into orange, organize its position and give dangerous notification if it is clicked */
+/* the next part is basically the same but special only for perimeter of square calculation */
+.coral2 {
+    background-color: #e0000091;
+    color: lightgreen;
+    padding: 25px 25px;
+    width: 100%;
+    border: none;
+}
+.figure2 {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* it does not use padding because if box sizing change
+    then padding will change too */
+}
+.square2 {
+    border: 1px solid lightgreen;
+    height: 75px;
+    width: 75px
+}

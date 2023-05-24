@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Default from HTML:5 syntax -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link into style.css file for web design-->
+</head>
+<body>
+    <header>
+        <span class="title">CalTics</span> 
+        <span class="subtitle">Calculator of mathemaTics</span> 
+        <!-- Web header -->
+    </header>
+    <main>
+            <!-- Area -->
+            <div class="card">
+                <!-- card class is needed for white background above body background-->
+                <div class="welcometext">
+                    <p style="font-size: 25px;">Welcome to CalTics</p>
+                    <p style="font-size: 12px;">Hi buddy, Welcome to CalTics :]</p>
+                    <p style="font-size: 12px;">A simple web app that useful for calculating area and perimeter of Two Dimension (2D) figures</p>
+                    <!-- welcome text description after Web header -->
+                    <!-- Author of these codes files relized that styling for font size etc should not be in HTML page. Nevertheless, 
+                    Author has diffculties for using those styling for p tags which has parent to div tag and other classes in style.css
+                    file. Hence, author add font style in here (HTML page) -->
+                </div>
+                <table>
+                    <tr>
+                        <button class="red">Square</button>
+                    </tr>
+                    <tr>
+                        <button class="white">Rectangle</button>
+                    </tr>
+                    <tr>
+                        <button class="coral1">Area of Square</button>
+                    </tr>
+                    <!-- table tags and classes for square,rectangle button and title of Area calculation on Square -->
+                </table>
+                <div class="figure">
+                    <div class="square"></div>
+                    <!-- figre and square class is needed for creating square 2D figure -->
+                </div>
+                <div class="formula-description">
+                    <p style="font-size: 12px;">Formula of Square Area is:</p>
+                    <p style="text-align: center; font-size: 12px;">A = S x S</p>
+                
+                    <p style="font-size: 12px;">Where:</p>
+                    <p style="font-size: 12px;">A = Area</p>
+                    <p style="font-size: 12px;">S = Side</p>
+                    <!-- formula description and its p tags are useful to decribe formula and process of Square Area Calculation -->
+                </div>
+                <hr>
+                <div>
+                    <!-- <form> -->
+                        <h3>Calculate Square Area</h3>
+                        <input type="number" id="Side-Area" name="Side-Area" required>
+                        <p id="Formula-Area"></p>
+                        <p id="Calculation-Area"></p>
+                        <p id="Output-Area"></p>
+                        <button class="green" type="submit" name="Calculate-Area" onclick="calculateArea()">Calculate</button>
+                        <!-- After input area for side numbers, Naming on classes in p tags are useful for synchronization with 
+                        calculate and reset button which use javascript. Area added to explain code easier for reader-->
+                        <br>
+                        <button class="orange" type="reset" name="Reset-Area" onclick="myReset()">Reset</button>
+                    <!-- </form> --> 
+                    <!-- The usage of form tag leads to disappearance of Area result immadiately in miliseconds, but 
+                    without form, required in input is not giving any announcement-->
+                </div>
+            </div>
+            <!-- Perimeter -->
+            <!-- comments and explanations of perimeter section is basically the same with area section -->
+            <div class="card">
+                <table>
+                    <tr>
+                        <button class="coral2">Perimeter of Square</button>
+                    </tr>
+                </table>
+                <div class="figure2">
+                    <div class="square2"></div>
+                </div>
+                <div class="formula-description2">
+                    <p style="font-size: 12px;">Formula of Square Perimeter is:</p>
+                    <p style="text-align: center; font-size: 12px;">P = 4 x S</p>
+                
+                    <p style="font-size: 12px;">Where:</p>
+                    <p style="font-size: 12px;">P = Perimeter</p>
+                    <p style="font-size: 12px;">S = Side</p>
+                </div>
+                <hr>
+                <div>
+                        <h3>Calculate Square Perimeter</h3>
+                        <input type="number" id="Side-Perimeter" name="Side-Perimeter" required>
+                        <p id="Formula-Perimeter"></p>
+                        <p id="Calculation-Perimeter"></p>
+                        <p id="Output-Perimeter"></p>
+                        <button class="green" type="submit" name="Calculate-Perimeter" onclick="calculatePerimeter()">Calculate</button>
+                        <br>
+                        <button class="orange" type="reset" name="Reset-Perimeter" onclick="myReset2()">Reset</button>
+                </div>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- reference for javascript file -->
+</body>
+</html>
